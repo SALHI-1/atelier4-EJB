@@ -11,20 +11,17 @@ L'application permet de gérer un système de scolarité à travers trois interf
 1.  **Gestion des Étudiants (`/etudiants`)**
     * Permet d'ajouter de nouveaux étudiants et d'afficher la liste des inscrits.
     * **Entité `Etudiant`** : `id_etudiant`, `nom`, `prenom`, `cne` (unique), `adresse`, `niveau`.
-    * Interface utilisateur :
-    ![Capture d'écran de la gestion des étudiants](docs/etudiants.png)
+    * *Interface utilisateur: [docs/etudiants.png]*
 
 2.  **Gestion des Modules (`/modules`)**
     * Permet d'ajouter de nouveaux modules et de lister les modules disponibles.
     * **Entité `Module`** : `id_module`, `nom_module`, `semestre`.
-    * Interface utilisateur :
-    ![Capture d'écran de la gestion des modules](docs/modules.png)
+    * *Interface utilisateur: [docs/modules.png]*
 
 3.  **Gestion des Notes (`/suivies`)**
     * Permet d'enregistrer une `Suivie` (note) pour un étudiant et un module spécifiques, et d'afficher l'historique des notes.
     * **Entité `Suivie`** : `id_suivie`, `note`, `date_notation`, et relations **Many-to-One** vers `Etudiant` et `Module`.
-    * Interface utilisateur :
-    ![Capture d'écran de la gestion des notes](docs/suivies.png)
+    * *Interface utilisateur: [docs/suivies.png]*
 
 ---
 
